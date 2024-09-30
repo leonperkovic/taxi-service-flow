@@ -1,0 +1,106 @@
+{
+  "components": [
+    {
+      "label": "Client name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0cngf52",
+        "columns": null
+      },
+      "id": "Field_0br1a39",
+      "key": "clientName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "time",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0agcd4q",
+        "columns": null
+      },
+      "id": "Field_114x11x",
+      "key": "pickupTime",
+      "validate": {
+        "required": true
+      },
+      "timeLabel": "Pickup time",
+      "timeSerializingFormat": "utc_offset",
+      "timeInterval": 15,
+      "use24h": true
+    },
+    {
+      "values": [
+        {
+          "label": "Street A",
+          "value": "Street A"
+        },
+        {
+          "label": "Street B",
+          "value": "Street B"
+        },
+        {
+          "label": "Street C",
+          "value": "Street C"
+        },
+        {
+          "label": "Street D",
+          "value": "Street D"
+        }
+      ],
+      "label": "Pickup location",
+      "type": "select",
+      "layout": {
+        "row": "Row_1ayr32e",
+        "columns": 16
+      },
+      "id": "Field_0934h3s",
+      "key": "pickupLocation",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Street A",
+          "value": "Street A"
+        },
+        {
+          "label": "Street B",
+          "value": "Street B"
+        },
+        {
+          "label": "Street C",
+          "value": "Street C"
+        },
+        {
+          "label": "Street D",
+          "value": "Street D"
+        }
+      ],
+      "label": "Destination",
+      "type": "select",
+      "layout": {
+        "row": "Row_1caecpk",
+        "columns": null
+      },
+      "id": "Field_1juarxk",
+      "key": "destination",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "RideRequest",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: taxi-service-flow
+  datasource:
+    url: jdbc:h2:mem:demodb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2.console.enabled: true
+
+camunda.bpm:
+  admin-user:
+    id: admin
+    password: admin
+  filter:
+    create: All tasks
+  history-level: full
+  process-engine-name: default
+  database:
+    schema-update: true
+  auto-deployment-enabled: true
+  deployment-resource-pattern:
+    - classpath*:**/*.bpmn
+    - classpath*:**/*.form
+
+taxi-service-api:
+  base-url: http://localhost:8081
